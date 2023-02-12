@@ -11,7 +11,7 @@
   crossorigin="anonymous">
   </script>
   <script>
-    $(function() {
+    $(document).ready(function() {
       $("#box").click(function() {
         let red = Math.floor((Math.random() * 255) + 0);
         let green = Math.floor((Math.random() * 255) + 0);
@@ -19,13 +19,19 @@
         let color = "rgb(" + red + "," + green + "," + blue + ")";
         $("#box").css("background-color", color );
       });
-    });
+    });    
   </script>
   
 </head>
 <body>
   <div id="box"> 
-    <p>Click Here to See the Color Changes randomly!!!😋😋😋</p>
+    <p>Click Inside the Box to See the Color Changes randomly!!!😋😋😋</p>
+    
+  </div>
+  <div id="scroll-container">
+    <div id="scroll-text">
+      By Abmart @ Soft Skills Inc, Doha Qatar, 📞: +974-30142283, WhatsApp : +2349012264816.
+    <div>
   </div>
   
 </body>
