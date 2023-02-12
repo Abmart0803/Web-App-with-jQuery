@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuerry Web App.</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
+  crossorigin="anonymous">
+  </script>
+  <script>
+    $(function() {
+      $("#box").click(function() {
+        let red = Math.floor((Math.random() * 255) + 0);
+        let green = Math.floor((Math.random() * 255) + 0);
+        let blue = Math.floor((Math.random() * 255) + 0);
+        let color = "rgb(" + red + "," + green + "," + blue + ")";
+        $("#box").css("background-color", color );
+      });
+    });
+  </script>
+  
+</head>
+<body>
+  <div id="box"> 
+    <p>Click Here to See the Color Changes randomly!!!😋😋😋</p>
+  </div>
+  
+</body>
+</html>

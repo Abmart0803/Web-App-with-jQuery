@@ -1,0 +1,15 @@
+#box {
+  border: 2px solid purple;
+  height: 300px;
+  width: 300px;
+}
+
+div {
+  margin: auto auto;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 100px;
+}
